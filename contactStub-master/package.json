@@ -1,0 +1,13 @@
+{
+  "name": "contactManager",
+  "version": "0.0.1",
+  "description": "Contact Manager Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jayakrishnan",
+  "devDependencies": {
+    "express": "^3.5.0"
+  }
+}

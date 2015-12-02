@@ -1,0 +1,43 @@
+<h2>List Of Contacts</h2>
+<input type="text" placeholder="Search Contacts" class="form-control" data-ng-model="search">
+
+<!-- <div class="">
+   
+    <div class="row contacts-list">
+        <div class="col-md-4" data-ng-repeat="contact in contacts | orderBy:'name':false | filter:search">
+            <h2>{{contact.name | uppercase}}</h2>
+            <p>
+                <img data-ng-src="{{contact.thumb}}" class="thumb-big">
+            </p>
+            <p>{{contact.review | limitTo:99}}...</p>
+            <p>
+                <span class="label label-warning availability">Availability ({{contact.availability}})</span>
+                <a data-ng-href="#/contact/{{contact.id}}" class="btn btn-primary ">Review</a>
+                <a data-ng-href="#/bookTickets/{{contact.id}}" class="btn btn-success " role="button" data-ng-disabled="contact.availability == 0">Book »</a>
+            </p>
+        </div>
+    </div>
+</div> -->
+
+<div class="row text-center contacts-list">
+
+    <div class="col-md-3 col-sm-6 hero-feature" data-ng-repeat="contact in contacts | orderBy:'name':false | filter:search">
+        <div class="thumbnail">
+            <img src="/img/faces/{{$index+1}}.jpg" alt="">
+            <div class="caption">
+                <h3>{{contact.name | uppercase}}</h3>
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{contact.tel}}<br>
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> {{contact.email}}<br>
+
+                <p>
+                    <button type="button" class="btn btn-success">
+                      <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                    </button>
+                    <button type="button" class="btn btn-danger" ng-really-message="Are you sure ?" ng-really-click="reallyDelete(item)" item="item">
+                      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
