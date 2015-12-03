@@ -43,3 +43,22 @@ contactStubApp.controller("editContactController", function ($scope, $location, 
         $location.path("/");
     }
 });
+
+contactStubApp.controller("addContactController", function ($scope, $location, $rootScope) {
+    $scope.currentUser = {};
+    $scope.submitForm = function () {
+        var id = $rootScope.contacts[$rootScope.contacts.length - 1].id + 1;
+        $scope.currentUser.id = id;
+        if (id > 15) {
+            var imgInd = id--;
+            $scope.currentUser.img = "/img/faces/" + imgInd + ".jpg";
+        } else { 
+            $scope.currentUser.img = "/img/faces/" + id + ".jpg";
+        }
+        $rootScope.contacts.push($scope.currentUser);
+        $location.path("/")
+    }
+    $scope.back = function () {
+        $location.path("/");
+    }
+});
