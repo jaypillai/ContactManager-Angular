@@ -3,15 +3,12 @@ contactStubApp.config(function ($routeProvider) {
         .when('/', {
             templateUrl: 'tmpl/home.html',
             controller: 'contactStubController'
-        }).when('/movie/:id', {
-            templateUrl: 'tmpl/movie.html',
-            controller: 'movieDetailsController'
-        }).when('/bookings', {
-            templateUrl: 'tmpl/bookings.html',
-            controller: 'bookingDetailsController'
-        }).when('/bookTickets/:id', {
-            templateUrl: 'tmpl/bookTickets.html',
-            controller: 'bookTicketsController'
+        }).when('/editContact', {
+            templateUrl: 'tmpl/editContact.html',
+            controller: 'editContactController'
+        }).when('/addContact', {
+            templateUrl: 'tmpl/addContact.html',
+            controller: 'addContactController'
         }).otherwise({
             redirectTo: '/'
         });
