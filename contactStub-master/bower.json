@@ -2,9 +2,8 @@
   "name": "movieStub",
   "version": "0.0.1",
   "authors": [
-    "Arvind Ravulavaru <arvind.ravulavaru@gmail.com>"
+    "Jayakrishnan"
   ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

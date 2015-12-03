@@ -1,17 +1,12 @@
-ngMovieStub
+Contact Manager -Angular
 ===========
 
-Online Movie tickets booking via Angularjs - A Hands on tutorial.
-
-* Tutorial http://thejackalofjavascript.com/angularjs-hands-tutorial/
-* Demo http://moviestub.cloudno.de/
+Contact Manager App in Angular JS
 
 Steps to Install
 ----------------
 
-* Download the folder
-* Open terminal/prompt here
-* Run `npm install && bower install`
+* Run `npm install 
 
 Steps to run the app
 ---------------------
