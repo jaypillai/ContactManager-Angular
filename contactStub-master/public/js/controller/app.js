@@ -26,8 +26,7 @@ contactStubApp.controller("contactStubController", function ($scope, contactStub
         $location.path('/editContact');
     };
 
-    $scope.addContact = function (contact) {
-        $rootScope.currcontact = contact;
+    $scope.addContact = function () {
         $location.path('/addContact');
     };
     
