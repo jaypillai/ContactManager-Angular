@@ -27,3 +27,6 @@ body {
 .header_bg{
     background-image: url(/css/bg_header.jpg);	
 }
+.thumbnail {
+	background-image: url(/css/tile.jpg);	
+}
