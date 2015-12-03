@@ -9,7 +9,8 @@
   },
   "author": "Jayakrishnan",
   "devDependencies": {
-    "express": "^3.5.0"
+    "express": "^3.5.0",
+    "cool-ascii-faces": "~1.3.x"
   },
   "engines": {
     "node": "0.12.0"
